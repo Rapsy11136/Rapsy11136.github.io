@@ -44,6 +44,6 @@ When reporting a vulnerability, please provide the following details to help us 
 
 ### Contact Information
 
-For any questions or concerns regarding this security policy, please contact us at [security@yourproject.org](mailto:security@yourproject.org).
+For any questions or concerns regarding this security policy, please contact us at [security@rapsy11136.github.io](mailto:security@rapsy11136.github.io).
 
 Thank you for helping us maintain the security and integrity of our project.
