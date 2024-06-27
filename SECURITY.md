@@ -17,7 +17,7 @@ We appreciate the community's efforts to improve the security of our project. If
 
 ### Where to Report
 
-Please report any security vulnerabilities via email to [security@yourproject.org](mailto:security@yourproject.org). This mailbox is regularly monitored by our security team.
+Please report any security vulnerabilities via email to [security@yourproject.org](mailto:security@rapsy11136.github.io). This mailbox is regularly monitored by our security team.
 
 ### What to Include
 
