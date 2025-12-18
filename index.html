@@ -1,136 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raphepela T.J Personal Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header img {
-            display: block;
-            margin: 0 auto;
-            width: 377px;
-            height: 102.38px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h2 {
-            color: #333;
-        }
-        h1{
-            color: #fff;
-        }
-        .portfolio, .contact, .social-links {
-            margin-top: 20px;
-        }
-        .portfolio a, .social-links a {
-            display: block;
-            color: #007bff;
-            text-decoration: none;
-            margin: 5px 0;
-        }
-        .portfolio a:hover, .social-links a:hover {
-            text-decoration: underline;
-        }
-        .image-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .image-container img {
-            width: 120px;
-            height: 100px;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: transform 0.2s;
-        }
-        .image-container img:hover {
-            transform: scale(1.1);
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: #fff;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raphepela T.J | Personal Webpage</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1f2933;
+      --secondary: #3b82f6;
+      --background: #f9fafb;
+      --card: #ffffff;
+      --text: #374151;
+      --muted: #6b7280;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111827, #1f2933);
+      color: #fff;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: #d1d5db;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: -3rem auto 2rem;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .about p {
+      margin-bottom: 1rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .tag {
+      background: #e5efff;
+      color: var(--secondary);
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+
+    .portfolio a {
+      display: block;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--primary);
+      border: 1px solid #e5e7eb;
+      margin-bottom: 0.75rem;
+      transition: all 0.2s ease;
+    }
+
+    .portfolio a:hover {
+      background: var(--secondary);
+      color: #fff;
+      border-color: var(--secondary);
+    }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .image-container img {
+      width: 120px;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .image-container img:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .social-links a {
+      margin-right: 1rem;
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Raphepela T.J Personal Webpage</h1>
-        <!-- Uncomment the following line and replace "header-image.jpg" with your image file -->
-        <!-- <img src="header-image.jpg" alt="Header Image"> -->
-    </header>
-    <div class="container">
-        <section class="bio">
-            <h2>About Me</h2>
-            <p>
-                My name is Mr. Raphepela TJ. I've Grown up in front of a computer, I've always been fascinated by the world of technology. 
-                Now, as a third-year student pursuing a BSc in Information Technology, I am focused on building a career in Emerging Technology. 
-                My journey has been driven by a passion for protecting digital landscapes and ensuring the safety of online communities. 
-                <br><br>
-                Another thing I am a gamer! 🎮<br>
-                Front-end Developer👨‍💻<br>
-                PowerBI Analyst
-                Check the handle below on the links. 🤙
-            </p>
-            <hr>
-        </section>
-        <section class="portfolio">
-            <h2>Portfolio</h2>
-            <a href="toDoListApp.html">To-Do List Application</a>
-            <a href="calculator.html">Calculator</a>
-            <a href="quiz.html">Quiz</a>
-        </section>
-        <section class="badge">
-            <h2>Badges</h2>
-            <div class="image-container">
-                <a href="https://www.credly.com/badges/699dfa54-840c-4034-a96b-827e557a7360" target="_blank">
-                    <img src="intro2cyber.png" alt="Intro to Cybersecurity Badge">
-                </a>
-                <a href="https://verify.mygreatlearning.com/YIUPBTBG" target="_blank">
-                    <img src="cloudCom.png" alt="Cloud Computing Badge">
-                </a>
-            </div>
-            <p>Visit my <a href="https://za.linkedin.com/in/tshepiso-raphepela-40831b238?original_referer=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">LinkedIn</a> profile to see more badges/certificates.</p>
-        </section>
-        <hr>
-        <section class="contact">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:belicrapsy11136@gmail.com">belicrapsy11136@gmail.com</a></p>
-        </section>
-        <hr>
-        <section class="social-links">
-            <h2>Social Media Links</h2>
-            <p>
-                <a href="https://za.linkedin.com/in/tshepiso-raphepela-40831b238?original_referer=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/Rapsy11136/Rapsy/commit/8181a12698a77089a7108921c3fb14fbbe957cf1" target="_blank">GitHub</a> |
-                <a href="https://youtube.com/@rapsysacoding?si=JpCRpHgy2u9daFhw" target="_blank">YouTube</a>
-            </p>
-        </section>
-    </div>
-    <footer>
-        &copy; 2025 Rapsy. All rights reserved.
-    </footer>
+
+  <header>
+    <h1>Raphepela T.J</h1>
+    <p>Front-end Developer • Power BI Analyst • Tech Enthusiast</p>
+  </header>
+
+  <main class="container">
+
+    <section class="card about">
+      <h2>About Me</h2>
+      <p>
+        I am a BSc Information Technology graduate with a strong interest in emerging technologies.
+        I grew up around computers, which shaped my passion for building clean, user-focused digital solutions.
+      </p>
+      <p>
+        I enjoy front-end development, data analysis, and exploring how technology can solve real-world problems.
+        Outside of tech, I am also a gamer 🎮.
+      </p>
+      <div class="tags">
+        <span class="tag">Front-end Development</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Web Technologies</span>
+        <span class="tag">Data Analysis</span>
+      </div>
+    </section>
+
+    <section class="card portfolio">
+      <h2>Portfolio</h2>
+      <a href="toDoListApp.html">To-Do List Application</a>
+      <a href="calculator.html">Calculator</a>
+      <a href="quiz.html">Quiz Application</a>
+    </section>
+
+    <section class="card badges">
+      <h2>Badges & Certifications</h2>
+      <div class="image-container">
+        <a href="https://www.credly.com/badges/699dfa54-840c-4034-a96b-827e557a7360" target="_blank">
+          <img src="intro2cyber.png" alt="Intro to Cybersecurity Badge" />
+        </a>
+        <a href="https://verify.mygreatlearning.com/YIUPBTBG" target="_blank">
+          <img src="cloudCom.png" alt="Cloud Computing Badge" />
+        </a>
+      </div>
+      <p style="margin-top:1rem;">
+        View more on my <a href="https://za.linkedin.com/in/tshepiso-raphepela-40831b238" target="_blank">LinkedIn</a> profile.
+      </p>
+    </section>
+
+    <section class="card contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:raphepelat@gmail.com">raphepelat@gmail.com</a></p>
+    </section>
+
+    <section class="card social-links">
+      <h2>Social Links</h2>
+      <a href="https://za.linkedin.com/in/tshepiso-raphepela-40831b238" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Rapsy11136" target="_blank">GitHub</a>
+      <a href="https://youtube.com/@rapsysacoding" target="_blank">YouTube</a>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Raphepela T.J. All rights reserved.
+  </footer>
+
 </body>
 </html>
